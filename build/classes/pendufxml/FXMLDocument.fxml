@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pendufxml.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="892.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="892.0" prefWidth="1280.0">
+         <children>
+            <SplitPane dividerPositions="0.6123595505617978" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="892.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@../../build/classes/FeuilleStyle/Pane.css">
+                     <children>
+                        <ImageView fx:id="AffichageDessin" fitHeight="356.0" fitWidth="1274.0" layoutX="2.0" pickOnBounds="true" />
+                        <Label fx:id="AffichageInstructions" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="355.0" prefHeight="86.0" prefWidth="1278.0" textFill="#5948a1" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="355.0">
+                           <font>
+                              <Font name="AR DARLING" size="48.0" />
+                           </font>
+                        </Label>
+                      <AnchorPane layoutX="1.0" layoutY="441.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1278.0">
+                           <children>
+                              <Label fx:id="AffichageMot" alignment="CENTER" layoutX="194.0" layoutY="6.0" prefHeight="100.0" prefWidth="1278.0" textFill="#5948a1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="AR DARLING" size="50.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="193.0" prefWidth="547.0">
+                     <children>
+                        <GridPane prefHeight="341.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="A" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="197.0" prefWidth="256.0" text="A" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="B" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="312.0" text="B" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="C" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="385.0" text="C" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="D" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="99.0" prefWidth="298.0" text="D" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="E" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="267.0" text="E" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="F" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="93.0" prefWidth="256.0" text="F" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="G" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="119.0" prefWidth="266.0" text="G" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="H" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="303.0" text="H" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="I" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="118.0" prefWidth="286.0" text="I" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="J" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="120.0" prefWidth="277.0" text="J" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="K" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="110.0" prefWidth="256.0" text="K" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="L" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="322.0" text="L" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="M" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="399.0" text="M" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="N" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="380.0" text="N" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="O" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="275.0" text="O" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="P" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="457.0" text="P" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="Q" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="134.0" prefWidth="305.0" text="Q" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="R" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="108.0" prefWidth="301.0" text="R" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="S" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="106.0" prefWidth="273.0" text="S" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="T" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="446.0" text="T" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="U" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="355.0" text="U" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="V" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="139.0" prefWidth="276.0" text="V" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="W" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="154.0" prefWidth="342.0" text="W" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="X" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="469.0" text="X" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="Y" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="179.0" prefWidth="315.0" text="Y" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="Z" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="118.0" prefWidth="256.0" text="Z" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Algerian" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect></Button>
+                              <Button fx:id="Recap" mnemonicParsing="false" onAction="#AfficherRecap" prefHeight="116.0" prefWidth="390.0" text="Recap" textFill="#5948a1" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Showcard Gothic" size="24.0" />
+                                 </font>
+                                 <effect>
+                                    <SepiaTone level="0.11" />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor></Button>
+                              <Button fx:id="nouvellePartie" mnemonicParsing="false" onAction="#faireNouvellePartie" prefHeight="137.0" prefWidth="384.0" text="Nouvelle Partie" textFill="#5948a1" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <SepiaTone level="0.12" />
+                                 </effect>
+                                 <font>
+                                    <Font name="Showcard Gothic" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
